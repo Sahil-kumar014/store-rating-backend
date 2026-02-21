@@ -37,7 +37,7 @@ export default function Stores() {
         method: "POST",
         body: { store_id, rating },
       });
-      setMsg("Rating submitted ✅");
+      setMsg("Rating submitted");
       await load();
     } catch (err) {
       setMsg(err.message);
@@ -54,7 +54,7 @@ export default function Stores() {
       });
       setStoreName("");
       setStoreAddress("");
-      setMsg("Store created ✅");
+      setMsg("Store created");
       await load();
     } catch (err) {
       setMsg(err.message);
@@ -68,7 +68,7 @@ export default function Stores() {
         <button onClick={logout}>Logout</button>
       </div>
 
-      <p style={{ color: msg.includes("✅") ? "green" : "red" }}>{msg}</p>
+      <p style={{ color: msg.includes("done!") ? "green" : "red" }}>{msg}</p>
 
       {role === "ADMIN" && (
         <div style={{ border: "1px solid #ddd", padding: 12, marginBottom: 16 }}>

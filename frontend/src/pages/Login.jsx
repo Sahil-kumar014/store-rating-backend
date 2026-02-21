@@ -19,7 +19,7 @@ export default function Login() {
       localStorage.setItem("token", data.token);
       if (data.role) localStorage.setItem("role", data.role);
 
-      setMsg("Login successful ✅");
+      setMsg("Login successful");
       window.location.href = "/stores";
     } catch (err) {
       setMsg(err.message);
@@ -45,7 +45,7 @@ export default function Login() {
         />
         <button style={{ width: "100%", padding: 10 }}>Login</button>
       </form>
-      <p style={{ marginTop: 10, color: msg.includes("✅") ? "green" : "red" }}>
+      <p style={{ marginTop: 10, color: msg.includes("done!") ? "green" : "red" }}>
         {msg}
       </p>
       <p>

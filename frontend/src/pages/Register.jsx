@@ -58,7 +58,7 @@ export default function Register() {
         </select>
         <button style={{ width: "100%", padding: 10 }}>Register</button>
       </form>
-      <p style={{ marginTop: 10, color: msg.includes("✅") ? "green" : "red" }}>
+      <p style={{ marginTop: 10, color: msg.includes("done!") ? "green" : "red" }}>
         {msg}
       </p>
       <p>
