@@ -24,8 +24,35 @@ A RESTful backend API for a Store Rating System built with Node.js, Express, and
 - middlewares/
 - config/
 
+dir tree :
+
+store-rating-app
+|_backend
+  |__frontend
+     |__public
+      --src
+      --index.html
+      --.env
+      --package.json
+      --package-lock.json
+      --vite.config.js
+   --src
+   --app.js
+   --package.json
+   --package-lock.json
+
+
+
 ## ⚙️ Setup Instructions
 
 1. Clone the repo
 2. Run `npm install`
 3. Create a `.env` file:
+
+To run backend :
+`cd backend`
+`node app.js`
+
+To run frontend :
+`cd backend\frontend`
+`npm run dev`
